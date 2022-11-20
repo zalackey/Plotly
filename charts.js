@@ -127,12 +127,11 @@ function buildCharts(sample)
       title: `All Bacteria Cultures Per Sample ${sample}`,
       showlegend: false,
       xaxis: {title: "OTU ID"},
-       
-      
+      yaxis: {title: "Bacteria Count"}
     };
 
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot(); 
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
     
   });
   //samples.json no longer available
